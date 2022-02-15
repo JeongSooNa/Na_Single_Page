@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+        .container{
+            width: 100%;
+            height: 120vh;
+            position: relative;
+            z-index: 1;
+        }
+        .container::after{
+            width: 100%;
+            height: 100%;
+            content: "";
+            background-image: url(greece.jpg);
+            background-size: cover;
+            position: absolute;
+            top: 0;
+            left: 0;
+            z-index: -1;
+            opacity: 0.3;
+        }
+        .header{
+            height: 100px;
+            width: 100%;
+            background-color: rgba(0, 0, 0, 0.432);
+            text-align: center;
+        }
+        .header h1{
+            padding: 20px;
+            font-size: 50px;
+            font-family: 'Times New Roman', Times, serif;
+            letter-spacing: 10px;
+        }
+        .main{
+            text-align: center;
+            padding: 30px;
+            display: flex;
+            flex-direction: column;
+            letter-spacing: 5px;
+        }
+        .item{
+            background-color: rgba(0, 0, 0, 0.288);
+            border: solid black;
+            border-radius: 10px;
+            margin: 20px;
+            padding: 5px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>300</h1>
+        </div>
+        <div class="main">
+            <div class="item">
+                <h1>This is Sparta</h1>
+                <img src="300.gif" alt="">
+                <p>When Leonidas kick a envoys<br>at death hole</p>
+            </div>
+            <div class="item">
+                <h1>This is Where We Fight</h1>
+                <img src="fight.gif" alt="">
+            </div>
+            <div class="item">
+                <h1>Shield</h1>
+                <img src="shield.gif" alt="">
+            </div>
+        </div>
+    </div>
+</body>
+</html>
